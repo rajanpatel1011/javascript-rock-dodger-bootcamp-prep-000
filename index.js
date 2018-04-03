@@ -101,18 +101,18 @@ function moveDodger(e) {
 
 }
 
-let left = 180;
+
 let right = 220;
 dodgerRightEdge=positionToInteger(DODGER.style.right);
 dodgerLeftEdge=positionToInteger(DODGER.style.left);
 
 function moveDodgerLeft() {
 
-   
+   let left = positionToInteger(DODGER.style.left);
  window.requestAnimationFrame(function(){
    if(dodgerLeftEdge>0){
      DODGER.style.left= `${left-=4}px`;
-     DODGER.style.right= `${right+=4}px`;
+   //  DODGER.style.right= `${right+=4}px`;
    }
  });
    
