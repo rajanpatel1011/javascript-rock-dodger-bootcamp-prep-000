@@ -120,11 +120,14 @@ function moveDodgerLeft() {
 
 function moveDodgerRight() {
 
-   if(dodgerRightEdge<400){
+   
+   window.requestAnimationFrame(function(){
+     if(dodgerRightEdge<400){
      DODGER.style.right=`${right-=4}px`
      DODGER.style.left=`${left+=4}px`;
-   window.requestAnimationFrame(moveDodger(39));
-   }
+     }
+   });
+   
 }
 
 
