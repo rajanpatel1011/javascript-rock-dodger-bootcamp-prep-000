@@ -123,7 +123,7 @@ dodgerRightEdge=dodgerLeftEdge+40;
    window.requestAnimationFrame(function(){
      if(dodgerRightEdge<400){
      DODGER.style.right=`${right-=4}px`
-  //   DODGER.style.left=`${left+=4}px`;
+     DODGER.style.left=`${left+=4}px`;
      }
    });
    
