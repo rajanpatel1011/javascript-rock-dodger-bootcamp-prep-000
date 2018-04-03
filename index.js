@@ -120,6 +120,7 @@ function moveDodgerRight() {
 dodgerLeftEdge=positionToInteger(DODGER.style.left);
 dodgerRightEdge=dodgerLeftEdge+40;
    let right = dodgerLeftEdge+40;
+   let left = dodgerLeftEdge;
    window.requestAnimationFrame(function(){
      if(dodgerRightEdge<400){
      DODGER.style.right=`${right-=4}px`
