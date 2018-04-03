@@ -118,6 +118,7 @@ dodgerLeftEdge=positionToInteger(DODGER.style.left);
 
 function moveDodgerRight() {
 dodgerLeftEdge=positionToInteger(DODGER.style.left);
+dodgerRightEdge=dodgerLeftEdge+40;
    let right = dodgerLeftEdge+40;
    window.requestAnimationFrame(function(){
      if(dodgerRightEdge<400){
