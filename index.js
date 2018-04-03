@@ -102,7 +102,6 @@ function moveDodger(e) {
 }
 
 
-let right = 220;
 dodgerRightEdge=positionToInteger(DODGER.style.right);
 dodgerLeftEdge=positionToInteger(DODGER.style.left);
 
@@ -120,11 +119,11 @@ function moveDodgerLeft() {
 
 function moveDodgerRight() {
 
-   
+   let right = dodgerLeftEdge+40;
    window.requestAnimationFrame(function(){
      if(dodgerRightEdge<400){
      DODGER.style.right=`${right-=4}px`
-     DODGER.style.left=`${left+=4}px`;
+  //   DODGER.style.left=`${left+=4}px`;
      }
    });
    
