@@ -102,8 +102,6 @@ function moveDodger(e) {
 }
 
 
-dodgerRightEdge=positionToInteger(DODGER.style.right);
-dodgerLeftEdge=positionToInteger(DODGER.style.left);
 function moveDodgerLeft() {
 
    let left = dodgerLeftEdge;
