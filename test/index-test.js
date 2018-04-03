@@ -269,7 +269,7 @@ describe('Rock Dodger', () => {
       dodger = document.getElementById('dodger')
 
       window.requestAnimationFrame = cb => {
-        cb()
+        cb(e)
       }
     })
 
