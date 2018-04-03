@@ -108,13 +108,14 @@ dodgerLeftEdge=positionToInteger(DODGER.style.left);
 
 function moveDodgerLeft() {
 
+   
+ window.requestAnimationFrame(function(){
    if(dodgerLeftEdge>0){
      DODGER.style.left= `${left-=4}px`;
      DODGER.style.right= `${right+=4}px`;
- window.requestAnimationFrame(function(){
-   moveDodger(e)
- });
    }
+ });
+   
 }
 
 function moveDodgerRight() {
