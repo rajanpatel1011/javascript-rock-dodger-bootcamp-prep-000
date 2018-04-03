@@ -111,7 +111,7 @@ function moveDodgerLeft() {
    if(dodgerLeftEdge>0){
      DODGER.style.left= `${left-=4}px`;
      DODGER.style.right= `${right+=4}px`;
- window.requestAnimationFrame(moveDodger());
+ window.requestAnimationFrame(moveDodger);
    }
 }
 
@@ -120,7 +120,7 @@ function moveDodgerRight() {
    if(dodgerRightEdge<400){
      DODGER.style.right=`${right-=4}px`
      DODGER.style.left=`${left+=4}px`;
-   window.requestAnimationFrame(moveDodger());
+   window.requestAnimationFrame(moveDodger);
    }
 }
 
